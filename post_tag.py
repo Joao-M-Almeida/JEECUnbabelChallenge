@@ -8,7 +8,7 @@ import itertools
 import string
 
 
-s0 = "AQ AO RG DD DP DT DE DI DA NC NP VM VS VA PP PD PX PI PT PR PE CC CS I SP F Z"
+s0 = "AQ AO RG DD DP DT DE DI DA NC NP VM VS VA PP PD PX PI PT PR PE CC CS I SP F Z 0"
 words = s0.lower().split()
 fdist = itertools.permutations(words, 2)
 dic = {}
@@ -21,20 +21,24 @@ st = StanfordPOSTagger('/Users/ricardomartins/Desktop/stanford-postagger-full-20
 
 def postag(txt,Dictio=dic,tagger=st,n=2):
     vect = [0] * len(dic)
-    txt = ''.join([c for c in txt if c not in string.punctuation])
+    #txt = ''.join([c for c in txt if c not in string.punctuation])
     txt_lst = txt.split()
     #print txt_lst
     tag_lst = st.tag(txt_lst)
     tag_lst = [clean_tag(tag[1]) for tag in tag_lst]
     grams = ngrams(tag_lst,n)
     for gram in grams:
-        vect[Dictio[gram]] +=1 
-    print vect
+        try:
+            vect[Dictio[gram]] +=1 
+        except KeyError:
+            pass
+    return vect
 
 def clean_tag(tag,possible_tags = words):
-    if tag[0] in words:
+    possible_tags = set(possible_tags)
+    if tag[0] in possible_tags:
         return tag[0]
-    elif tag[0:2] in words:
+    elif tag[0:2] in possible_tags:
         return tag[0:2]
     return '0'
     
