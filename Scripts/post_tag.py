@@ -15,8 +15,8 @@ dic = {}
 for i,k in enumerate(fdist):
     dic[k]=i
 tagers=[]
-st = StanfordPOSTagger('/Users/ricardomartins/Desktop/stanford-postagger-full-2015-12-09/models/spanish.tagger',
-                       '/Users/ricardomartins/Desktop/stanford-postagger-full-2015-12-09/stanford-postagger.jar')
+st = StanfordPOSTagger('../../stanford-postagger-full-2015-12-09/models/spanish.tagger',
+                       '../../stanford-postagger-full-2015-12-09/stanford-postagger.jar')
 
 
 def postag(txt,Dictio=dic,tagger=st,n=2):
