@@ -1,7 +1,7 @@
 # JEECUnbabelChallenge
 Participation on the JEEC Unbabel Challenge.
 
-At [JEEC16](http://jeec.tecnico.pt/jeec16/) (a Electrical and Computer Engineering event organized by the student at [Técnico](tecnico.ulisboa.pt)) [Unbabel](https://unbabel.com/) went to give a talk and proposed a challenge to the students attendine. We (João Almeida and Ricardo Martins) decided to participate, this repository contains all the work we did during the 11-day Challenge, from 11/03/2016 to 21/03/2016.
+At [JEEC16](http://jeec.tecnico.pt/jeec16/) (a Electrical and Computer Engineering event organized by the student at [Técnico](http://tecnico.ulisboa.pt)) [Unbabel](https://unbabel.com/) (a Portuguese startup that does human powered machine translation) went to give a talk and proposed a challenge to the students attendine. We (João Almeida and Ricardo Martins) decided to participate, this repository contains all the work we did during the 11-day Challenge, from 11/03/2016 to 21/03/2016.
 
 ####Goal: 
 Create a ML classifier to distinguish between machine translations and human translations.
