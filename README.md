@@ -21,8 +21,23 @@ The available dataset consisted of about [20K labeled phrases](https://github.co
 ####Approach:
 - **TODO**: Explain approach.
 
-####Final Result:
-  Voting Classifier based on LDA, LogisticRegression and AdaBoost, cross validation score of (55.0 +/- 1.6)% .
+####Final Results:
+  Voting Classifier based on LDA, LogisticRegression and AdaBoost with Dimensionality reduction by Pricinpal component analysis achieved a cross validation score of (55.0 +/- 1.6)% and a final result of 57.8%.
+
+#####Global Results:
+1. Francisco Dias: 59.72%
+2. Catarina Silva: 59.22%
+3. Miguel Borges Ribeiro, Tiago Baltazar: 58.39%
+4. João Almeida, Ricardo Martins: 57.80%
+5. João Rocha e Melo, Miguel Monteiro: 56.34%
+6. António Lopes: 55.62%
+7. Tiago Santos, Nuno Xu: 51.77%
+8. Bruno Henriques, Joana Lapas: 50.25%
+9. Sandro Nunes: 47.86%
+10. Gonçalo Correia: 47.61%
+11. Ricardo Amendoeira: 45.56%
+12. Jorge Matos: 40.43%
+13. Luis Novoa, Maria Carvalho: 0.00% (file missing results)
 
 #####Packages required:
 - [Jupyter Notebook](http://jupyter.org/)
